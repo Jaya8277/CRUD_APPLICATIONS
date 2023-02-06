@@ -31,3 +31,5 @@ app.listen(port,()=>{
 
     console.log(`listening at port number ${port}`)
 })
+
+// A server error has occurred FUNCTION_INVOCATION_FAILED how solve this error on vercel deplyement
