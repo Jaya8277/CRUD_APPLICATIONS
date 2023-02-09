@@ -5,7 +5,7 @@ const router= express.Router();
 const users=require("../models/userSchema")
 
 router.get("/", (req,res)=>{
-res.send("Home Page")
+res.send("Home P")
 })
 // resister  user
 

@@ -22,7 +22,7 @@ const Register = () => {
   }, []);
   const GetData = () => {
     axios
-      .get("https://crud-app-backend-eight.vercel.app/getdata")
+      .get("http://localhost:8080/getdata")
       .then((res) => {
         setData(res.data.userdata);
         // console.log(res.data.userdata)
@@ -47,7 +47,7 @@ const Register = () => {
 
     console.log(payload);
     axios
-      .post("https://pleasant-stole-hen.cyclic.app/register", payload)
+      .post("http://localhost:8080/register", payload)
       .then((res) => {
         alert(res.data.message);
 
@@ -60,7 +60,7 @@ const Register = () => {
 
   const Delete = (id) => {
     axios
-      .delete(`https://pleasant-stole-hen.cyclic.app/deleteuser/${id}`)
+      .delete(`http://localhost:8080/deleteuser/${id}`)
       .then((res) => {
         alert(res.data.message);
         GetData();

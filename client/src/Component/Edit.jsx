@@ -36,7 +36,7 @@ const Edit = () => {
       postalcode: postalcode,
     };
     axios
-      .put(`https://crud-app-backend-eight.vercel.app/updateuser/${id}`, payload)
+      .put(`http://localhost:8080/updateuser/${id}`, payload)
       .then((res) => {
         console.log(res.data.message);
         navigate("/");
